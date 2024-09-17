@@ -8,7 +8,7 @@ public class RotateKTimes {
         Left rotation means : arr = [1, 2 , 3, 4, 5 , 6 , 7 , 8 , 9 ];
         for d = 2 left rotations : arr = [3, 4, 5 , 6 , 7 , 8 , 9 , 1 , 2];
 
-        for a rotation of length size original array is returned back.
+        for a rotation of length size , original array is returned back.
         so no of rotation required will be d % length of array
 
         temp = arr[d-1];// first d elements.
