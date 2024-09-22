@@ -1,4 +1,4 @@
-package Maths;
+package maths;
 
 public class CountDigits {
     public static int countDigits(int n){

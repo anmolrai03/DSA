@@ -1,4 +1,4 @@
-package Maths;
+package maths;
 
 public class Armstrong {
     private static boolean isArmstrong(int n){
