@@ -1,0 +1,329 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ReversePair",
+            "request": "launch",
+            "mainClass": "Arrays.hard.ReversePair",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "RepeatedMissing",
+            "request": "launch",
+            "mainClass": "Arrays.hard.RepeatedMissing",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MergeInterval",
+            "request": "launch",
+            "mainClass": "Arrays.hard.MergeInterval",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Pairs",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.Pairs",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MajorityEleII",
+            "request": "launch",
+            "mainClass": "Arrays.hard.MajorityEleII",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SubarraySum",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.SubarraySum",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Matrix90",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.Matrix90",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "ZeroMatrix",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.ZeroMatrix",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "LongestSeq",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.LongestSeq",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SuperiorElement",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.SuperiorElement",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "NextPermutation",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.NextPermutation",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "AlternateNumber",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.AlternateNumber",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MaimumSubarraySum",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.MaimumSubarraySum",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "NonUnique",
+            "request": "launch",
+            "mainClass": "Arrays.codetantra.NonUnique",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "ReverseArray",
+            "request": "launch",
+            "mainClass": "Arrays.codetantra.ReverseArray",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SumOfFactors",
+            "request": "launch",
+            "mainClass": "Maths.SumOfFactors",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "NthPrime",
+            "request": "launch",
+            "mainClass": "Maths.NthPrime",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MajorityEle",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.MajorityEle",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "UnionArray",
+            "request": "launch",
+            "mainClass": "Arrays.Easy.UnionArray",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SecondLargestSmallest",
+            "request": "launch",
+            "mainClass": "Arrays.Easy.SecondLargestSmallest",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "secondLargest",
+            "request": "launch",
+            "mainClass": "Arrays.Easy.secondLargest",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "BuySell",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.BuySell",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "DivisiorSum",
+            "request": "launch",
+            "mainClass": "Maths.DivisiorSum",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Armstrong",
+            "request": "launch",
+            "mainClass": "Maths.Armstrong",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Maths.Palindrome",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "CountDigits",
+            "request": "launch",
+            "mainClass": "Maths.CountDigits",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Maps",
+            "request": "launch",
+            "mainClass": "Arrays.Practice.Hashing.Maps",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "CharacterHash",
+            "request": "launch",
+            "mainClass": "Arrays.Practice.Hashing.CharacterHash",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SortZeroOneTwo",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.SortZeroOneTwo",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "Arrays.Medium.TwoSum",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "AppearsOnce",
+            "request": "launch",
+            "mainClass": "Arrays.Easy.AppearsOnce",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "LongestSubarray",
+            "request": "launch",
+            "mainClass": "Arrays.LongestSubarray",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AppearsOnce",
+            "request": "launch",
+            "mainClass": "Arrays.AppearsOnce",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MaxConsiOnes",
+            "request": "launch",
+            "mainClass": "Arrays.MaxConsiOnes",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MissingNumber",
+            "request": "launch",
+            "mainClass": "Arrays.MissingNumber",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "MoveZeros",
+            "request": "launch",
+            "mainClass": "Arrays.MoveZeros",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "Practice",
+            "request": "launch",
+            "mainClass": "Arrays.Practice",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicate",
+            "request": "launch",
+            "mainClass": "Arrays.RemoveDuplicate",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "RotateKTimes",
+            "request": "launch",
+            "mainClass": "Arrays.RotateKTimes",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "RotateLeft",
+            "request": "launch",
+            "mainClass": "Arrays.RotateLeft",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "SetExample",
+            "request": "launch",
+            "mainClass": "Arrays.SetExample",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "UnionArray",
+            "request": "launch",
+            "mainClass": "Arrays.UnionArray",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "isSorted",
+            "request": "launch",
+            "mainClass": "Arrays.isSorted",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "largestElement",
+            "request": "launch",
+            "mainClass": "Arrays.largestElement",
+            "projectName": "DSA_79061d18"
+        },
+        {
+            "type": "java",
+            "name": "secondLargest",
+            "request": "launch",
+            "mainClass": "Arrays.secondLargest",
+            "projectName": "DSA_79061d18"
+        }
+    ]
+}
