@@ -2,14 +2,14 @@ package linkedList.DoublyLL;
 
 public class DoublyLinedList {
 
-   private int size;
-   private Node head;
-   private Node tail;
+   public int size;
+   public Node head;
+   public Node tail;
 
-   private class Node{
-      private int data;
-      private Node next;
-      private Node prev;
+   public static class Node{
+      public int data;
+      public Node next;
+      public Node prev;
 
       public Node(int data , Node next , Node prev){
          this.data = data;
@@ -146,6 +146,11 @@ public class DoublyLinedList {
       return this.size;
    }
 
+   //get head
+   public Node getHead(){
+      return  this.head;
+   }
+
    //traversal of the linkedlist.
    public void display() {
       if(this.head == null){
@@ -160,36 +165,7 @@ public class DoublyLinedList {
       System.out.println("End");
    }
 
-
-   //convert array into linkedlist
-   public Node constructDLL(int arr[]) {
-      Node head = null;
-      Node tail = null;
-
-      for(int num : arr){
-         Node[] result = lastInsert(head , tail , num);
-         head = result[0];
-         tail = result[1];
-      }
-      return head;
-   }
-
-   private Node[] lastInsert(Node head , Node tail , int val){
-
-      Node newNode = new Node(val);
-
-      if(head == null){
-         head = newNode;
-         tail = newNode;
-         return new Node[]{head , tail};
-      }
-      tail.next = newNode;
-      newNode.prev = tail;
-      tail = newNode;
-      return new Node[]{head , tail};
-   }
-
-   public void showList(Node head){
+   public static void showList(Node head){
       if(head == null){
          System.out.println("List Empty.");
          return;
@@ -202,29 +178,5 @@ public class DoublyLinedList {
       System.out.println("End");
    }
 
-   public void printList(Node node) {
-      System.out.println(node);
-      Node tmp = node;
-      int c1 = 0, c2 = 0;
-      if (tmp != null) {
-         while (tmp.next != null) {
-            c1++;
-            tmp = tmp.next;
-         }
-         while (tmp.prev != null) {
-            c2++;
-            tmp = tmp.prev;
-         }
-      }
-      if (c1 != c2) {
-         System.out.println("-1");
-         return;
-      }
-      while (tmp != null) {
-         System.out.print(tmp.data + " ");
-         tmp = tmp.next;
-      }
-      System.out.println();
-   }
 
 }
