@@ -2,14 +2,14 @@ package linkedList.OneDLL;
 
 public class LinkedList {
 
-   private Node head;
-   private Node tail;
+   public Node head;
+   public Node tail;
 
-   private int size;
+   public int size;
 
-   private class Node{
-      private int data;
-      private Node next;
+   public static class Node{
+      public int data;
+      public Node next;
 
       public Node (int data , Node next){
          this.data = data;
@@ -156,6 +156,24 @@ public class LinkedList {
       System.out.println("End");
    }
 
+   public static void show(Node node){
+
+      if(node == null){
+         System.out.println("List is empty.");
+      }
+
+      Node temp = node;
+      while (temp != null){
+         System.out.print(temp.data + "-> ");
+         temp = temp.next;
+      }
+      System.out.println("End");
+   }
+
+   public Node getHead(){
+      return this.head;
+   }
+
    public static void main(String[] args) {
       int[] arr = {1, 2, 3, 4, 5};
 //      Node node = new Node(arr[1]);
@@ -196,6 +214,8 @@ public class LinkedList {
       list.display();
       System.out.println(list.getSize());
 
+      System.out.println(list.getHead());
+      show(list.getHead());
 
    }
 }
