@@ -2,22 +2,22 @@ package linkedList.OneDLL;
 
 public class LinkedList {
 
-   public Node head;
-   public Node tail;
+   public ListNode head;
+   public ListNode tail;
 
    public int size;
 
-   public static class Node{
-      public int data;
-      public Node next;
+   public static class ListNode {
+      public int val;
+      public ListNode next;
 
-      public Node (int data , Node next){
-         this.data = data;
+      public ListNode(int data , ListNode next){
+         this.val = data;
          this.next = next;
       }
 
-      public Node (int data){
-         this.data = data;
+      public ListNode(int data){
+         this.val = data;
          this.next = null;
       }
    }
@@ -28,7 +28,7 @@ public class LinkedList {
 
 //   Insertion into the linked list
    public void insertFirst(int val){
-      Node newNode = new Node(val);
+      ListNode newNode = new ListNode(val);
 
       if(head == null){
          head = newNode;
@@ -42,7 +42,7 @@ public class LinkedList {
    }
 
    public void insertLast(int val){
-      Node newNode = new Node(val);
+      ListNode newNode = new ListNode(val);
       if(tail == null){
          head = newNode;
          tail = newNode;
@@ -67,12 +67,12 @@ public class LinkedList {
       }
       else{
          int cnt = 1;
-         Node temp = this.head;
+         ListNode temp = this.head;
          while(temp.next != null && cnt != index){
             cnt +=1;
             temp = temp.next;
          }
-         Node newNode = new Node(val);
+         ListNode newNode = new ListNode(val);
          newNode.next = temp.next;
          temp.next = newNode;
          this.size +=1;
@@ -94,7 +94,7 @@ public class LinkedList {
          System.out.println("List is empty.");
          return;
       }
-      Node temp = this.head;
+      ListNode temp = this.head;
 //      while(temp.next != null && temp.next.next != null){
 //         temp = temp.next;
 //      }
@@ -120,14 +120,14 @@ public class LinkedList {
       }
       else{
          int cnt = 1;
-         Node temp = this.head;
+         ListNode temp = this.head;
          while(temp.next != null && cnt != index){
             cnt +=1;
             temp = temp.next;
          }
 
 //         temp.next.next = null;
-         Node toDelete = temp.next;
+         ListNode toDelete = temp.next;
          temp.next = temp.next.next;
          //deleting the deleted node's next in order to remove its reference to the next item in
          // the linked list allowing it to be removed via the garbage collection.
@@ -148,29 +148,29 @@ public class LinkedList {
          System.out.println("Empty List");
          return;
       }
-      Node temp = head;
+      ListNode temp = head;
       while (temp != null){
-         System.out.print(temp.data + "-> ");
+         System.out.print(temp.val + "-> ");
          temp = temp.next;
       }
       System.out.println("End");
    }
 
-   public static void show(Node node){
+   public static void show(ListNode listNode){
 
-      if(node == null){
+      if(listNode == null){
          System.out.println("List is empty.");
       }
 
-      Node temp = node;
+      ListNode temp = listNode;
       while (temp != null){
-         System.out.print(temp.data + "-> ");
+         System.out.print(temp.val + "-> ");
          temp = temp.next;
       }
       System.out.println("End");
    }
 
-   public Node getHead(){
+   public ListNode getHead(){
       return this.head;
    }
 

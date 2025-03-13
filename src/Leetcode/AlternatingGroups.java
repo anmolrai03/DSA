@@ -1,4 +1,4 @@
-package Arrays.Leetcode;
+package Leetcode;
 
 //March 9 : 3208
 public class AlternatingGroups {

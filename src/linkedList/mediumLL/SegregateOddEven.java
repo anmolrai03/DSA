@@ -1,29 +1,29 @@
 package linkedList.mediumLL;
 
 import linkedList.OneDLL.LinkedList;
-import linkedList.OneDLL.LinkedList.Node;
+import linkedList.OneDLL.LinkedList.ListNode;
 import static linkedList.OneDLL.LinkedList.show;
 
 public class SegregateOddEven {
 
-   public static Node segregate(Node head){
+   public static ListNode segregate(ListNode head){
       if(head == null || head.next == null || head.next.next == null){
          return head;
       }
 
       //find length
       int lnt = 0;
-      Node tempNode = head;
+      ListNode tempNode = head;
       while(tempNode != null){
          lnt++;
          tempNode = tempNode.next;
       }
       System.out.println(lnt);
 
-      Node curr = head;
-      Node nex = head.next;
+      ListNode curr = head;
+      ListNode nex = head.next;
       int idx = 1;
-      Node temp = null;
+      ListNode temp = null;
       while(curr != null){
 
          if(idx == 2){
@@ -63,9 +63,9 @@ public class SegregateOddEven {
 //      list.insertLast(7);
 //      list.insertLast(8);
 //      list.display();
-      Node head = list.getHead();
+      ListNode head = list.getHead();
       show(head);
-      Node ans = segregate(head);
+      ListNode ans = segregate(head);
       show(ans);
    }
 }

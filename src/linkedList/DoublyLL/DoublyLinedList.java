@@ -3,22 +3,22 @@ package linkedList.DoublyLL;
 public class DoublyLinedList {
 
    public int size;
-   public Node head;
-   public Node tail;
+   public ListNode head;
+   public ListNode tail;
 
-   public static class Node{
-      public int data;
-      public Node next;
-      public Node prev;
+   public static class ListNode {
+      public int val;
+      public ListNode next;
+      public ListNode prev;
 
-      public Node(int data , Node next , Node prev){
-         this.data = data;
+      public ListNode(int data , ListNode next , ListNode prev){
+         this.val = data;
          this.next = next;
          this.prev = prev;
       }
 
-      public Node(int data) {
-         this.data = data;
+      public ListNode(int data) {
+         this.val = data;
          this.next = null;
          this.prev = null;
       }
@@ -31,7 +31,7 @@ public class DoublyLinedList {
    //Insertion in the doubly linked list.
    public void insertFirst(int val){
       //Create a node.
-      Node newNode = new Node(val);
+      ListNode newNode = new ListNode(val);
 
       if(this.tail == null){
          this.head = newNode;
@@ -47,7 +47,7 @@ public class DoublyLinedList {
 
    public void insertLast(int val){
 
-      Node newNode = new Node(val);
+      ListNode newNode = new ListNode(val);
 
       if(this.tail == null){
          this.head = newNode;
@@ -75,8 +75,8 @@ public class DoublyLinedList {
       }
       else{
          int cnt = 1;
-         Node newNode = new Node(val);
-         Node temp = this.head;
+         ListNode newNode = new ListNode(val);
+         ListNode temp = this.head;
          while(temp != null && cnt != index){
             cnt++;
             temp = temp.next;
@@ -130,7 +130,7 @@ public class DoublyLinedList {
       }
       else{
          int cnt = 1;
-         Node temp = this.head;
+         ListNode temp = this.head;
          while(temp != null && cnt != index){
             cnt++;
             temp = temp.next;
@@ -147,7 +147,7 @@ public class DoublyLinedList {
    }
 
    //get head
-   public Node getHead(){
+   public ListNode getHead(){
       return  this.head;
    }
 
@@ -157,22 +157,22 @@ public class DoublyLinedList {
          System.out.println("List is Empty.");
          return;
       }
-      Node temp = this.head;
+      ListNode temp = this.head;
       while(temp != null){
-         System.out.print(temp.data + "->" );
+         System.out.print(temp.val + "->" );
          temp = temp.next;
       }
       System.out.println("End");
    }
 
-   public static void showList(Node head){
+   public static void showList(ListNode head){
       if(head == null){
          System.out.println("List Empty.");
          return;
       }
-      Node temp = head;
+      ListNode temp = head;
       while(temp != null){
-         System.out.print(temp.data + "->");
+         System.out.print(temp.val + "->");
          temp = temp.next;
       }
       System.out.println("End");

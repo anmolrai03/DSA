@@ -48,8 +48,8 @@ public class Main {
 
       int[] arr = {1,2,3,4,5};
 //      dll.constructDLL(arr);
-      System.out.println(dll.constructDLL(arr));
-      dll.printList(dll.constructDLL(arr));
+//      System.out.println(dll.constructDLL(arr));
+//      dll.printList(dll.constructDLL(arr));
 //      HashMap<Integer> map = new HashMap<>();
 //      Node temp = head;
 //      while(temp != null){
