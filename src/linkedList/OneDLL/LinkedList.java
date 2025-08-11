@@ -11,6 +11,10 @@ public class LinkedList {
       public int val;
       public ListNode next;
 
+      public ListNode(){
+         this.next = null;
+      }
+
       public ListNode(int data , ListNode next){
          this.val = data;
          this.next = next;
@@ -30,27 +34,27 @@ public class LinkedList {
    public void insertFirst(int val){
       ListNode newNode = new ListNode(val);
 
-      if(head == null){
-         head = newNode;
-         tail = newNode;
+      if(this.head == null){
+         this.head = newNode;
+         this.tail = newNode;
          this.size += 1;
          return;
       }
       newNode.next = head;
-      head = newNode;
+      this.head = newNode;
       this.size += 1;
    }
 
    public void insertLast(int val){
       ListNode newNode = new ListNode(val);
-      if(tail == null){
-         head = newNode;
-         tail = newNode;
+      if(this.tail == null){
+         this.head = newNode;
+         this.tail = newNode;
          this.size += 1;
          return;
       }
-      tail.next = newNode;
-      tail = newNode;
+      this.tail.next = newNode;
+      this.tail = newNode;
       this.size += 1;
    }
 
@@ -159,7 +163,8 @@ public class LinkedList {
    public static void show(ListNode listNode){
 
       if(listNode == null){
-         System.out.println("List is empty.");
+         System.out.println("Empty List.");
+         return;
       }
 
       ListNode temp = listNode;
@@ -168,6 +173,27 @@ public class LinkedList {
          temp = temp.next;
       }
       System.out.println("End");
+   }
+
+
+   public static ListNode lastNthNode(ListNode head , int k){
+      return helper(head , k , k);
+   }
+
+   private static ListNode helper(ListNode head , int k , int cnt){
+      if(head == null){
+         return null;
+      }
+
+
+      ListNode ansNode = helper(head.next , k , cnt);
+      cnt--;
+      if(cnt == 0){
+
+         return head;
+      }
+      return ansNode;
+
    }
 
    public ListNode getHead(){
@@ -184,38 +210,47 @@ public class LinkedList {
 //      System.out.println(node1);
 //      System.out.println(node.next);
       LinkedList list = new LinkedList();
-      list.insertFirst(1);
-      list.insertFirst(5);
-      list.insertFirst(16);
-      list.insertFirst(35);
-      list.insertLast(45);
-      list.insertLast(15);
-      list.insertLast(99);
-      list.display();
-      System.out.println(list.getSize());
-      list.deleteFirst();
-      list.display();
-      System.out.println(list.getSize());
-      list.deleteLast();
-      list.display();
-      System.out.println(list.getSize());
+//      list.insertFirst(1);
+//      list.insertFirst(5);
+//      list.insertFirst(16);
+//      list.insertFirst(35);
+//      list.insertLast(45);
+//      list.insertLast(15);
+//      list.insertLast(99);
+//      list.display();
+//      System.out.println(list.getSize());
+//      list.deleteFirst();
+//      list.display();
+//      System.out.println(list.getSize());
+//      list.deleteLast();
+//      list.display();
+//      System.out.println(list.getSize());
+//
+//      list.insertAt(13 , 0);
+//      list.insertAt(13 , list.getSize()-1);
+//      list.display();
+//      list.insertAt(58 , 3);
+//      list.display();
+//      System.out.println(list.getSize());
+//      System.out.println("Delete from at an index.");
+//      list.deleteAt(2);
+//      System.out.println(list.getSize());
+//      list.display();
+//      list.deleteAt(0);
+//      list.display();
+//      System.out.println(list.getSize());
+//
+//      System.out.println(list.getHead());
+//      show(list.getHead());
 
-      list.insertAt(13 , 0);
-      list.insertAt(13 , list.getSize()-1);
-      list.display();
-      list.insertAt(58 , 3);
-      list.display();
-      System.out.println(list.getSize());
-      System.out.println("Delete from at an index.");
-      list.deleteAt(2);
-      System.out.println(list.getSize());
-      list.display();
-      list.deleteAt(0);
-      list.display();
-      System.out.println(list.getSize());
+      list.insertLast(1);
+      list.insertLast(2);
+      list.insertLast(3);
+      list.insertLast(4);
 
-      System.out.println(list.getHead());
-      show(list.getHead());
+      ListNode head = list.getHead();
+      show(head);
+      System.out.println(lastNthNode(head , 1).val);
 
    }
 }

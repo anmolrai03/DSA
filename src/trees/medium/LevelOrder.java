@@ -2,6 +2,8 @@ package trees.medium;
 
 import com.sun.source.tree.Tree;
 import trees.implementation.TreeNode;
+
+import static trees.implementation.Trees.inOrder;
 import static trees.implementation.Trees.lvlOrder;
 
 import java.util.ArrayList;
@@ -61,6 +63,7 @@ public class LevelOrder {
 //      System.out.println(r);
 //      System.out.println(lvlOrder(r));
       System.out.println(levelOrder(r));
+//      System.out.println(inOrder(r));
 
    }
 }

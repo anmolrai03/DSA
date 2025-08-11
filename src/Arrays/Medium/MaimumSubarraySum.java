@@ -53,9 +53,31 @@ public class MaimumSubarraySum {
         return ans;
     }
 
+
+    static int maxSubSumArray1(int[] arr){
+        if(arr.length == 0){
+            return 0;
+        }
+
+        int maxSum = Integer.MIN_VALUE;
+
+        int sum = 0;
+        for(int num: arr){
+            sum += num;
+            if(sum < 0){
+                sum = 0;
+            }
+            maxSum = Math.max(maxSum , sum);
+        }
+        return maxSum;
+    }
+
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 7, -4, 3, 2, -10, 9, 1};
 
+        System.out.println(maxSubarraySum(arr , arr.length));
         System.out.println(Arrays.toString(maxSubarrayList(arr, arr.length)));
+        System.out.println((maxSubSumArray1(arr)));
     }
 }

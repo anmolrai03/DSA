@@ -1,7 +1,5 @@
 package slidingwindow.medium;
 
-import java.util.Scanner;
-
 public class ConsecutiveOnesIII {
    public static int longestOnes(int[] nums, int k) {
       int maxLen = Integer.MIN_VALUE;

@@ -1,20 +1,20 @@
 package linkedList.mediumLL;
 
 import linkedList.OneDLL.LinkedList;
-import linkedList.OneDLL.LinkedList.Node;
+import linkedList.OneDLL.LinkedList.ListNode;
 
 import static linkedList.OneDLL.LinkedList.show;
 
 public class AddOne {
 
-   public static Node reverseList(Node head){
+   public static ListNode reverseList(ListNode head){
       if(head == null || head.next == null){
          return head;
       }
 
-      Node prev = null;
-      Node pres = head;
-      Node fut = head.next;
+      ListNode prev = null;
+      ListNode pres = head;
+      ListNode fut = head.next;
       while(pres != null){
          pres.next = prev;
          prev = pres;
@@ -26,20 +26,20 @@ public class AddOne {
       return prev;
    }
 
-   public static Node addOne(Node head){
+   public static ListNode addOne(ListNode head){
 
       //reverse the head.
-      Node newHead = reverseList(head);
+      ListNode newHead = reverseList(head);
 
       //addition of one to it.
       int carry = 1;
-      Node temp = newHead;
+      ListNode temp = newHead;
 
       while(temp != null){
-         int sum = (temp.data + carry) % 10;
-         carry = (temp.data + carry) / 10;
+         int sum = (temp.val + carry) % 10;
+         carry = (temp.val + carry) / 10;
 
-         temp.data = sum;
+         temp.val = sum;
          if(carry == 0) {
             break;
          }
@@ -51,7 +51,7 @@ public class AddOne {
       //if there is still a carry left , i.e, carry != 0. then add a new node with 1 and make it
       // head.
       if(carry != 0){
-         Node carryNode = new Node(1);
+         ListNode carryNode = new ListNode(1);
          carryNode.next = head;
          head = carryNode;
       }
@@ -65,14 +65,14 @@ public class AddOne {
       list.insertLast(9);
 //      list.display();
 
-      Node head = list.getHead();
+      ListNode head = list.getHead();
 //      Node newHead = reverseList(head);
 //      System.out.println("Before");
       show(head);
 //      show(newHead);
 //      reverseList(newHead);
 //      show(head);
-      Node ans = addOne(head);
+      ListNode ans = addOne(head);
       System.out.println("+ 1 = ");
       show(ans);
 

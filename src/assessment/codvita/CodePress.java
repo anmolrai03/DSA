@@ -1,4 +1,4 @@
-package codvita;
+package assessment.codvita;
 import java.util.*;
 
 public class CodePress {

@@ -1,7 +1,7 @@
 package linkedList.mediumDLL;
 
 import linkedList.DoublyLL.DoublyLinedList;
-import linkedList.DoublyLL.DoublyLinedList.Node;
+import linkedList.DoublyLL.DoublyLinedList.ListNode;
 
 import static  linkedList.DoublyLL.DoublyLinedList.showList;
 
@@ -19,24 +19,24 @@ public class DeleteAllOccurencesOfKey {
 //      dll.insertLast(2);
       showList(dll.getHead());
 
-      Node ans = deleteOccurences(dll.getHead() , 21);
+      ListNode ans = deleteOccurences(dll.getHead() , 21);
       showList(ans);
 
    }
 
-   public static Node deleteOccurences(Node head , int key){
-      if(head == null || (head.next == null && head.data == key)){
+   public static ListNode deleteOccurences(ListNode head , int key){
+      if(head == null || (head.next == null && head.val == key)){
          return null;
       }
 
-      if(head.next == null && head.data != key){
+      if(head.next == null && head.val != key){
          return head;
       }
 
       //now for others
-      Node temp = head;
+      ListNode temp = head;
       while(temp != null){
-         if(temp.data == key){
+         if(temp.val == key){
 
             //Case 1: it is head;
             if(temp.prev == null){

@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarySearch",
+      "request": "launch",
+      "mainClass": "BinarySearch",
+      "projectName": "DSA_79061d18"
+    },
+    {
+      "type": "java",
+      "name": "Fibo",
+      "request": "launch",
+      "mainClass": "Fibo",
+      "projectName": "DSA_79061d18"
+    },
+    {
+      "type": "java",
+      "name": "Rec01",
+      "request": "launch",
+      "mainClass": "Rec01",
+      "projectName": "DSA_79061d18"
+    },
+    {
+      "type": "java",
+      "name": "PeakElement",
+      "request": "launch",
+      "mainClass": "binarysearch.sectionA.PeakElement",
+      "projectName": "DSA_79061d18"
+    },
+    {
+      "type": "java",
       "name": "Toggle",
       "request": "launch",
       "mainClass": "codvita.Toggle",
